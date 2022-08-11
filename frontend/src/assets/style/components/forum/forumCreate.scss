@@ -1,0 +1,7 @@
+.forum-create {
+  @extend .column;
+  padding: var(--default-padding);
+  background-color: var(--primary);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}

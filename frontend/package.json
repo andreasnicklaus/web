@@ -1,0 +1,52 @@
+{
+  "version": "0.1.0",
+  "name": "mywebsite",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "axios": "^0.25.0",
+    "color-name": "^1.1.4",
+    "core-js": "^3.20.3",
+    "vue": "^2.6.14",
+    "vue-material-design-icons": "^5.0.0",
+    "vue-meta": "^2.4.0",
+    "vue-router": "^3.5.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.15",
+    "@vue/cli-plugin-eslint": "^4.5.15",
+    "@vue/cli-service": "^4.5.15",
+    "@babel/eslint-parser": "^7.16.5",
+    "eslint": "^7.0.0",
+    "eslint-plugin-vue": "^8.3.0",
+    "moment": "^2.29.1",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^10.2.1",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {
+      "vue/multi-word-component-names": "off"
+    }
+  }
+}

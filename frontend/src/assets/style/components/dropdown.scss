@@ -1,0 +1,38 @@
+.dropdown {
+  position: relative;
+  margin-bottom: 16px;
+
+  .dropbox {
+    @extend .row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--default-padding);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+  }
+
+  .dropable {
+    @extend .column;
+    background-color: var(--secondary-alternative);
+    z-index: 1;
+    box-shadow: var(--box-shadow);
+    width: calc(100% - 32px);
+    max-height: 40vh;
+    overflow-y: scroll;
+
+    position: absolute;
+    padding: var(--default-padding);
+  }
+
+  .dropdown-option {
+    padding: var(--default-padding);
+    margin-top: 1vh;
+    color: var(--primary-color-on);
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--secondary);
+     }
+  }
+}

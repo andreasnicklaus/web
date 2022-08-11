@@ -1,0 +1,26 @@
+#data-protection {
+  background-color: var(--background-color);
+  //color: var(--primary-color-on);
+  box-shadow: var(--box-shadow);
+
+  padding: var(--default-padding);
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+
+  width: calc(100% - 32px);
+
+  .inset-box {
+    width: calc(var(--max-content-width) / 2 * 3);
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto auto 16px;
+
+    .left {
+      display: inline-block;
+    }
+  }
+}

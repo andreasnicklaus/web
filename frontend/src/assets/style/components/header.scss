@@ -1,0 +1,129 @@
+header {
+  background-color: var(--background-color);
+  padding: 0 2vw;
+  width: calc(100% - 4vw);
+  height: var(--header-height);
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  box-shadow: var(--box-shadow);
+}
+
+#header-content {
+  width: calc(var(--max-content-width) / 2 * 3);
+  max-width: 100%;
+  height: var(--header-height);
+
+  margin: auto;
+
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+
+  background-color: var(--background-color);
+  color: var(--background-color-on);
+
+  svg {
+    transition: filter var(--transition-time);
+
+    &:hover {
+      filter: drop-shadow(0 0 10px var(--shadow-color));
+    }
+  }
+
+  div {
+
+    &.right-sided {
+
+      span,
+      a {
+        margin: 0 calc(var(--padding) / 2);
+      }
+    }
+  }
+
+  #center-head {
+    text-align: center;
+  }
+
+  #page-name {
+    color: var(--background-color-on);
+    padding: 3% 5%;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-size: 400% 100%;
+    background-position: right;
+    background-image: linear-gradient(
+                    to right,
+                    var(--primary) 50%,
+                    var(--background-color) 50%
+    );
+    border: solid thin var(--background-color-on);
+
+    transition: all calc(2 * var(--transition-time));
+
+    &:hover {
+      background-position: left;
+      color: var(--primary-color-on);
+      border-color: var(--primary);
+    }
+  }
+}
+
+#menu {
+  @extend .column, .center;
+  position: absolute;
+  top: var(--header-height);
+  left: 0;
+
+  height: calc(100vh - var(--header-height));
+
+  background-color: var(--background-color);
+  overflow-x: hidden;
+  transition: all var(--transition-time);
+
+  --width: 40vw;
+  width: var(--width);
+
+  padding: var(--default-padding);
+  padding-top: calc(var(--padding) * 2);
+
+  &.open {
+    left: 0;
+  }
+
+  &.closed {
+    left: calc(var(--width) * -1);
+    padding: 0;
+  }
+
+  #profile-pic {
+    max-width: 30vh;
+    border-radius: 50%;
+    width: 80%;
+  }
+
+  nav {
+    min-width: 20vw;
+
+    a {
+      @extend .row, .center, .even;
+      background-color: var(--primary);
+      color: var(--primary-color-on);
+
+      --link-height: 30pt;
+      height: var(--link-height);
+      border-radius: calc(var(--link-height) / 2);
+
+      padding: 0 var(--padding);
+      margin: var(--default-padding);
+
+      &:hover {
+        box-shadow: var(--box-shadow);
+      }
+    }
+  }
+}

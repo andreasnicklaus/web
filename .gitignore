@@ -1,0 +1,18 @@
+frontend/node_modules
+frontend/dist
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+backend/email_service/token.json
+dns/dynDNS.config.yaml
+dns/saved_ip_address.txt
+dns/dns.log
+
+*.pyc

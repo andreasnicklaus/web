@@ -1,0 +1,20 @@
+.fa-instagram {
+  -webkit-background-clip: text;
+  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-text-fill-color: transparent;
+}
+
+.fa {
+  border-radius: var(--border-radius);
+  font-size: 5vh;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all var(--transition-time);
+
+  &:hover {
+    //box-shadow: var(--box-shadow);
+    color: var(--primary);
+    transition: all var(--transition-time);
+  }
+}

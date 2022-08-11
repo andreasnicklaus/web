@@ -1,0 +1,19 @@
+.signup-form {
+  @extend .column;
+  background-color: var(--primary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: var(--default-padding);
+
+  .forward {
+    border-radius: var(--border-radius);
+    padding: var(--default-padding);
+    text-decoration: underline;
+    transition: all var(--transition-time);
+
+    &:hover {
+      box-shadow: var(--box-shadow);
+      transition: all var(--transition-time);
+    }
+  }
+}
