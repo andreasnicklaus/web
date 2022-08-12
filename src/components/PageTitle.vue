@@ -10,7 +10,7 @@
     </div>
 
     <div id="pagetitle-content">
-      <router-link id="back-arrow" v-if="!no_back_arrow" :to="back_arrow_goal || back_link"  class="material-icons" >
+      <router-link id="back-arrow" v-if="!no_back_arrow" :to="back_arrow_goal ? {name: back_arrow_goal } : back_link"  class="material-icons" >
         <ArrowLeftIcon title="go back" :size="36"/>
       </router-link>
 
@@ -31,7 +31,6 @@
 
 <script>
 import ArrowLeftIcon from "vue-material-design-icons/ArrowLeft.vue"
-// import ArrowDownIcon from "vue-material-design-icons/ArrowDownDropCircle.vue"
 import ArrowDownIcon from "vue-material-design-icons/MenuDown"
 
 export default {

@@ -9,7 +9,7 @@
       </div>
 
       <div class="row col-3 nowrap center" id="center-head">
-        <RouterLink to="/" id="page-name" title="Asante sana squash Banana - Rafiki">Andreas Nicklaus</RouterLink>
+        <router-link :to="{name: 'Home'}" id="page-name" title="Asante sana squash Banana - Rafiki">Andreas Nicklaus</router-link>
       </div>
 
       <div class="row right-sided col-3 nowrap center">
@@ -24,11 +24,11 @@
 
       <nav>
         <router-link v-for="e in [
-            {link: '/', name: 'Home'},
-            {link: '/about', name: 'About me'},
-            {link: '/my-work', name: 'My work'},
-            {link: '/games', name: 'Games'},
-        ]" @click.native="menuOpen = !menuOpen" :key="e.name" :to="e.link">{{e.name}}</router-link>
+            {link: 'Home', name: 'Home'},
+            {link: 'About', name: 'About me'},
+            {link: 'MyWork', name: 'My work'},
+            {link: 'Games', name: 'Games'},
+        ]" @click.native="menuOpen = !menuOpen" :key="e.name" :to="{name: e.link}">{{e.name}}</router-link>
       </nav>
     </div>
   </header>

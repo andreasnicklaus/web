@@ -3,7 +3,7 @@
     <PageTitle
         title="Currency Converter"
         paragraph="Convert your currency"
-        back_arrow_goal="/"
+        back_arrow_goal="Home"
     />
     <div class="container">
       <CurrencyConverter_component/>

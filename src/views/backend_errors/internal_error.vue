@@ -3,9 +3,9 @@
     <PageTitle
         title="Server error"
         paragraph="Never confuse a single defeat with a final defeat"
-        back_arrow_goal="/"
+        back_arrow_goal="Home"
         :background_image="background">
-      <Button text="Accept the defeat" link="/" type="inline"/>
+      <Button text="Accept the defeat" :link="{name: 'Home'}" type="inline"/>
     </PageTitle>
   </div>
 </template>

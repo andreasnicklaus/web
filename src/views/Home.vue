@@ -45,7 +45,7 @@
       <h2>My Skills 🤸</h2>
       <SkillsOverview/>
 
-      <Button link="/CV" text="My CV and other info" type="inline"/>
+      <Button :link="{name: 'CV'}" text="My CV and other info" type="inline"/>
     </ViewRow>
 
     <ViewRow>
@@ -63,7 +63,7 @@
         this page...</p>
       <p>All of this is an elaborate way to say "Thank you!" to all of you for visiting and reading.
         I hope you like it here and let me know through one of my contact options
-        <router-link class="underline" to="/about">here</router-link>👈.
+        <router-link class="underline" :to="{name: 'About'}">here</router-link>👈.
       </p>
       <p>Have a great day, Andi 👋</p>
       <small>(17.08.2021)</small>

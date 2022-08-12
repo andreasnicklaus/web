@@ -30,7 +30,6 @@
       <Button text="Add Island" v-on:click.native="game.addEmptyIsland()">
         <PlusIcon/>
       </Button>
-<!--      <Button text="Game Tick" v-on:click.native="game.tick()"/>-->
     </ViewRow>
   </div>
 </template>

@@ -30,7 +30,7 @@
       <h1>Data protection notice</h1>
       <p>When using this website, usage data is collected, but no user data. This usage data is anonymised and used for
         training purposes only. If you have any further questions, please contact the creators of the site
-        <router-link class="underline" to="/about#creator_overview">here</router-link>
+        <router-link class="underline" :to="{name: 'About'}">here</router-link>
         .
       </p>
 

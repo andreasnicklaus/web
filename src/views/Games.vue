@@ -1,9 +1,10 @@
 <template>
 <div id="games">
   <PageTitle title="Games" :miniature="miniature()" :background_image="pageimg">
-    <Button link="/games/civilization" text="WIP: Civilization" type="inline"/>
-    <!-- TODO: change link to github repo -->
-    <Button link="http://spyfall.andreasnicklaus.de" text="Spyfall" type="inline"/>
+    <Button :link="{name: 'Civilization'}" text="WIP: Civilization" type="inline"/>
+    <Button link="http://github.com/andreasnicklaus/spyfall" text="Spyfall" type="inline"/>
+    <Button link="http://github.com/andreasnicklaus/werewolves-dawn" text="Werewolves Dawn" type="inline"/>
+    <Button link="http://github.com/andreasnicklaus/concept-game" text="Concept" type="inline"/>
   </PageTitle>
   <router-view class="selectedGame"></router-view>
 </div>

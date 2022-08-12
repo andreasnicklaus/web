@@ -5,7 +5,7 @@
         <h1>Usage data collection</h1>
         <span>
           When using this site, you agree with me collecting usage data. You can
-          get more information <router-link class="underline" to="/imprint#dataProtectionNotice">here</router-link>.
+          get more information <router-link class="underline" :to="{name: 'Imprint'}">here</router-link>.
           <br/>
           Additionally, I use cookies to store your authentication when you log in.
           <br/>

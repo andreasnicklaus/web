@@ -1,10 +1,10 @@
 <template>
-  <RouterLink :to=link v-if="link && link.startsWith('/')">
+  <router-link :to=link v-if="link && link.startsWith('/')">
     <div :class="'button ' + (type ? type: '')">
       <slot/>
       {{ text }}
     </div>
-  </RouterLink>
+  </router-link>
 
   <a v-else-if="link && !link.startsWith('/')" :href="link" :class="'button ' + (type ? type: '')">
     <slot/>
