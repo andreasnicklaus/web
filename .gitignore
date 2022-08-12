@@ -11,5 +11,4 @@ dns/dynDNS.config.yaml
 dns/saved_ip_address.txt
 dns/dns.log
 
-*.pyc
 node_modules
