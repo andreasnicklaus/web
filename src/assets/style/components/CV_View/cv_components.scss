@@ -1,0 +1,17 @@
+.cv-part {
+  padding-bottom: 2vh;
+}
+
+#cv-personal {
+  #cv-personal-data {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+}
+
+#cv-time {
+  .cv-time-data {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+}

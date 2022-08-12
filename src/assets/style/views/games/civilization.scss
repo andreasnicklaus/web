@@ -1,0 +1,16 @@
+#civilization {
+  .island {
+    background-color: lightgreen;
+    border: sandybrown 12px solid;
+    border-radius: 12px;
+    margin: var(--padding) 0;
+    padding: var(--default-padding);
+
+    .island-name {
+      text-align: center;
+      text-decoration: underline;
+    }
+
+
+  }
+}

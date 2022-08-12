@@ -1,0 +1,43 @@
+.input {
+  @extend .row;
+  background-color: transparent;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: var(--font-xs);
+  padding: var(--default-padding);
+
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  padding-top: 8px;
+
+  &.number {
+    // Chrome, Safari, Edge, Opera
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    // Firefox
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    input {
+      box-shadow: none;
+      margin: 0;
+    }
+
+    .control {
+      @extend .column;
+    }
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: var(--box-shadow);
+    color: var(--background-color-on);
+    outline: none;
+  }
+}

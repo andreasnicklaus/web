@@ -4,7 +4,7 @@
 
 **Author:**	Andreas Nicklaus
 
-**Date:**		  21. January 2022
+**Date:**		21. January 2022
 
 **Contact:**	info@andreasnicklaus.de
 
