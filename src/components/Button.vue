@@ -1,5 +1,5 @@
 <template>
-  <router-link :to=link v-if="link && link.startsWith('/')">
+  <router-link :to=link v-if="link && (link.name || link.startsWith('/'))">
     <div :class="'button ' + (type ? type: '')">
       <slot/>
       {{ text }}

@@ -2,8 +2,8 @@
   <footer>
     <div>
       <h3>Topics</h3>
-      <router-link :to="{name: 'games'}">Games</router-link>
-      <router-link :to="{name: 'my-work'}">My Work</router-link>
+      <router-link :to="{name: 'Games'}">Games</router-link>
+      <router-link :to="{name: 'MyWork'}">My Work</router-link>
     </div>
 
     <div>
