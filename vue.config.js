@@ -1,7 +1,5 @@
-console.log(process.env.NODE_ENV)
-
 module.exports = {
-    publicPath: "/mywebsite/",
+    publicPath: "/web/",
     devServer: {
         port: 12345,
         headers: {
